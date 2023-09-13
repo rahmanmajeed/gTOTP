@@ -1,0 +1,32 @@
+{
+  "name": "gtotp",
+  "version": "1.0.0",
+  "description": "generate time-based one time password.",
+  "main": "index.js",
+  "scripts": {
+    "ts": "npx tsc",
+    "build": "yarn run ts --watch",
+    "start": "yarn build && node dist/index.js",
+    "output": "node dist/index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/rahmanmajeed/gTOTP.git"
+  },
+  "keywords": [
+    "otp",
+    "auth",
+    "password"
+  ],
+  "author": "majed",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/rahmanmajeed/gTOTP/issues"
+  },
+  "homepage": "https://github.com/rahmanmajeed/gTOTP#readme",
+  "devDependencies": {
+    "@types/node": "^20.6.0",
+    "ts-node": "^10.9.1",
+    "typescript": "^5.2.2"
+  }
+}
