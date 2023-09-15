@@ -1,16 +1,21 @@
-var buf = Buffer.alloc(8);
-var tmp = 8;
-for (let i = 0; i < 8; i++) {
-    console.log(buf,'before put')
-  // mask 0xff over number to get last 8
-  buf[7 - i] = tmp & 0xff;
+/**
+ * @digest {options}
+ */
 
-  console.log(buf.toString(),'after put')
+export const digest = (options: any) => {
+  
+  //unpack options
+  let secret = options.secret
+
+};
 
 
-  // shift 8 and get ready to loop over the next batch of 8
-  tmp = tmp >> 8;
+/**
+ * @generate {secret}
+ * @params {options}
+ * @return {secret}
+ */
 
-  console.log(tmp,'after shift')
-
+export const generateSecret = (options:any) => {
+  
 }

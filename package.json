@@ -7,7 +7,7 @@
     "ts": "npx tsc",
     "build": "yarn run ts --watch",
     "start": "yarn build && node dist/index.js",
-    "output": "node dist/index.js"
+    "stdout": "yarn run ts && node dist/index.js"
   },
   "repository": {
     "type": "git",
@@ -28,5 +28,8 @@
     "@types/node": "^20.6.0",
     "ts-node": "^10.9.1",
     "typescript": "^5.2.2"
+  },
+  "dependencies": {
+    "hi-base32": "^0.5.1"
   }
 }
