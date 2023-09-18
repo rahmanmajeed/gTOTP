@@ -8,6 +8,17 @@ import base32 from "hi-base32";
 export const digest = (options: any) => {
   //unpack options
   let secret = options.secret;
+  let counter = options.counter;
+  let encoding = options.encoding || 'ascii';
+  let algorithm = (options.algorithm || 'sha1').toLowerCase();
+
+
+  //convert secret to Buffer...
+  if(!Buffer.isBuffer(secret)){
+    if (encoding === 'base32') { secret = base32.decode(secret); } 
+    secret = Buffer.from(secret, encoding)
+  }
+
 };
 
 /**
